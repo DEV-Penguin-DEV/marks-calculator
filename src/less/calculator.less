@@ -1,0 +1,82 @@
+.calculator__input-container {
+  display: flex;
+  flex-direction: column-reverse;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.calculator__label {
+  margin-bottom: 6px;
+}
+
+.calculator__input {
+  padding: 8px 10px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 100px 100px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  &::placeholder {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+}
+
+.calculator__inputs-container {
+  margin-bottom: 16px;
+}
+
+.calculator__result {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: @main-color-1;
+}
+
+.calculator__submit {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Text color */
+
+  color: #131313;
+  background-color: @main-color-1;
+  border: none;
+  border-radius: 14px;
+  padding: 8px 0;
+  width: 159px
+}
+
+.calculator__container-result {
+  display: flex;
+  justify-content: space-between;
+}

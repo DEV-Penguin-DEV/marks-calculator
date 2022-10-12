@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade calculator</title>
+</head>
+
+<body class="main-page">
+  <header class="main-header">
+    <h1 class="main-header__title">Marks Calculator</h1>
+  </header>
+  <main class="main-container">
+    <section class="calculator">
+      <form class="calculator__form" action="">
+        <div class="calculator__inputs-container">
+          <div class="calculator__input-container">
+            <input type="number" class="calculator__input" id="calculator__input--tasks-count" placeholder="5" min="1"
+              required>
+            <label class="calculator__label" for="calculator__input--tasks-count">Write count of tasks</label>
+          </div>
+
+          <div class="calculator__input-container">
+            <input type="number" class="calculator__input" id="calculator__input--mistakes-count" placeholder="1"
+              min="0" required>
+            <label class="calculator__label" for="calculator__input--tasks-count">Write count of mistakes</label>
+          </div>
+
+          <div class="calculator__input-container">
+            <input type="number" class="calculator__input" id="calculator__input--max-grade" placeholder="6" min="0"
+              required>
+            <label class="calculator__label" for="calculator__input--max-grade">Write max mark</label>
+          </div>
+        </div>
+
+        <div class="calculator__container-result">
+          <button class="calculator__submit" type="submit">Получить оценку</button>
+          <div class="calculator__result"></div>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="bundle.js" type="module"></script>
+</body>
+
+</html>
